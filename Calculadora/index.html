@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
 </head>
 <body>
     <header>
@@ -11,7 +14,7 @@
 
     <div class="calculadora">
         <fieldset>
-        <form>
+        <form id="form">
             <label>Digite o Primeiro Número:</label><br>
             <input type="number" name="numero1" placeholder="45" required><br>
 
@@ -19,18 +22,23 @@
             <input type="number" name="numero2" placeholder="22" required><br>
 
             <label>Selecione a operação:</label><br>
-            <select name="operação" required>
+            <select name="operacao" required>
                 <option value="+">Soma +</option>
                 <option value="-">Subtração -</option>
                 <option value="/">Divisão /</option>
                 <option value="*">Multilpicação *</option>
+                <option value="^">Potenciação ^</option>
             </select> 
             <br><br>
-            <div id="submit">
+            <div id="envio">
                 <input type="submit" class="submit">
             </div>
         </form>
+            <br>
+            <p id="resultado"></p>
         </fieldset>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
