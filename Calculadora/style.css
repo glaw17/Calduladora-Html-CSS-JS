@@ -78,7 +78,17 @@ select:focus{
     background-color: limegreen;
 }
 
-#submit{
+#envio{
     display: flex;
     justify-content: center;
+}
+
+#resultado{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px; 
+    display: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
